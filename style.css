@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.clock-face {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.hand {
+  width: 50%;
+  height: 3px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all .05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
